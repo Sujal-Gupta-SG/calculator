@@ -29,11 +29,11 @@ To clone this repository, follow these steps:
 2. Navigate to the directory where you want to clone the repository.
 
 3. Run the following command:
-   ```bash
+   ```
    git clone https://github.com/Sujal092004/calculator.git
 Change into the cloned directory:
-bash
-Copy code
+
+
 cd calculator
 Running the Application
 Open the index.html file in a web browser to view the calculator application.
