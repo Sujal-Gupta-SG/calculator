@@ -1,6 +1,16 @@
 let screen = document.querySelector(".screen");
 let buttons = Array.from(document.getElementsByTagName("button"));
 
+const calans = () => {
+  try {
+    screen.innerText = screen.innerText.replace(/x/g, "*");
+    let result = eval(screen.innerText);
+    return (screen.innerText = result);
+  } catch (error) {
+    return (screen.innerText = "Invalid Expression");
+  }
+};
+
 document.body.addEventListener("keydown", (e) => {
   // console.log(e);
   if (
@@ -12,30 +22,18 @@ document.body.addEventListener("keydown", (e) => {
   ) {
     screen.innerText += e.key;
   } else if (e.key == "=" || e.key == "Enter") {
-    try {
-      screen.innerText = screen.innerText.replace(/x/g, "*");
-      let result = eval(screen.innerText);
-      screen.innerText = result;
-    } catch (error) {
-      screen.innerText = "Invalid Expression";
-    }
+    calans;
   } else if (e.key == "Backspace") {
     let value = screen.innerText.length;
     // console.log(value)
-    screen.innerText = screen.innerText.slice(0, value-1);
+    screen.innerText = screen.innerText.slice(0, value - 1);
   }
 });
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.value === "=") {
-      try {
-        screen.innerText = screen.innerText.replace(/x/g, "*");
-        let result = eval(screen.innerText);
-        screen.innerText = result;
-      } catch (error) {
-        screen.innerText = "Invalid Expression";
-      }
+      calans;
     } else {
       if (button.value === "C" || screen.innerText === "Invalid Expression") {
         // Clear the screen when "C" is clicked or if it contains "Invalid Expression"
