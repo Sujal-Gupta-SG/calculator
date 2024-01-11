@@ -25,7 +25,7 @@ document.body.addEventListener("keydown", (e) => {
 
 for (item of btn) {
   item.addEventListener("click", (e) => {
-    btntext = e.targenscreen.value;
+    btntext = e.target.innerText;
 
     if (btntext == "×") {
       btntext = "*";
