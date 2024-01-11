@@ -1,10 +1,31 @@
 var screen = document.querySelector("#screen");
 var btn = document.querySelectorAll(".btn");
 
+document.body.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (
+    (e.key >= 0 && e.key <= 9) ||
+    e.key == "+" ||
+    e.key == "*" ||
+    e.key == "/" ||
+    e.key == "-"
+  ) {
+    screen.value += e.key;
+  } else if (e.key == "=" || e.key == "Enter") {
+    try {
+      let result = eval(screen.value);
+      screen.value = result;
+    } catch (error) {
+      screen.value = "Invalid Expression";
+    }
+  } else if (e.key == "Backspace") {
+    backspc();
+  }
+});
 
 for (item of btn) {
   item.addEventListener("click", (e) => {
-    btntext = e.target.innerText;
+    btntext = e.targenscreen.value;
 
     if (btntext == "×") {
       btntext = "*";
