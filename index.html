@@ -4,62 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    <section class="page_404">
-        <div class="container1">
+
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
             <div class="row">
-                <div class="col-sm-12 ">
-                    <div class="col-sm-10 col-sm-offset-1  text-center">
-                        <div class="four_zero_four_bg">
-                            <h1 class="text-center ">404</h1>
-                        </div>
+                <button id="ce" onclick="backspc()">CE</button>
+                <button onclick="fact()">x!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="screen.value=''">AC</button>
+            </div>
 
-                        <div class="contant_box_404">
-                            <h3 class="h2">
-                                Look like you're lost
-                            </h3>
+            <div class="row">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">π</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">÷</button>
+            </div>
 
-                            <p>the page you are looking only get visible on desktop screen</p>
+            <div class="row">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">log</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">×</button>
+            </div>
 
-                            <a href="" class="link_404">Go to Home</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+                <button onclick="tan()">tan</button>
+                <button onclick="sqrt()">√</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="e()">e</button>
+                <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
+                </button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
             </div>
         </div>
-    </section>
-    <div class="calc">
-        <div class="screen"></div>
-        <div class="row1">
-            <button type="button" class="r1" value="7">7</button>
-            <button type="button" class="r1" value="8">8</button>
-            <button type="button" class="r1" value="9">9</button>
-            <button type="button" class="rp" value="+">+</button>
-        </div>
-        <div class="row2">
-            <button type="button" class="r2" value="4">4</button>
-            <button type="button" class="r2" value="5">5</button>
-            <button type="button" class="r2" value="6">6</button>
-            <button type="button" class="r-" value="-">-</button>
-        </div>
-        <div class="row3">
-            <button type="button" class="r3" value="1">1</button>
-            <button type="button" class="r3" value="2">2</button>
-            <button type="button" class="r3" value="3">3</button>
-            <button type="button" class="rx" value="x">x</button>
-        </div>
-        <div class="row4">
-            <button type="button" class="rc" value="C">C</button>
-            <button type="button" class="r4" value="0">0</button>
-            <button type="button" class="ro" value="=">=</button>
-            <button type="button" class="ro" value="/">/</button>
-        </div>
     </div>
-    <script src="script.js"></script>
+
 </body>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
