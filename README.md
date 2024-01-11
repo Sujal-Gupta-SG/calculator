@@ -1,56 +1,46 @@
-# Calculator Web App
+# Calculator App
 
-This is a simple web calculator application built using HTML, CSS, and JavaScript. The project includes a responsive 404 page and a calculator interface.
+A simple calculator web application with basic arithmetic and scientific functions.
 
-## Project Structure
+## Features
 
-The project structure consists of three main files:
+- Addition, subtraction, multiplication, and division.
+- Trigonometric functions: sin, cos, tan.
+- Exponential and logarithmic functions.
+- Factorial, square root, and power functions.
+- Constants: π (pi) and e (Euler's number).
 
-- **HTML (`index.html`):**
-  - Defines the structure of the web page.
-  - Includes a 404 page and a calculator interface.
-  - Linked to external stylesheets (`style.css`) and JavaScript file (`script.js`).
+## Usage
 
-- **CSS (`style.css`):**
-  - Contains styling information for the 404 page and the calculator interface.
-  - Uses media queries for responsiveness.
+1. Clone or download the repository.
+2. Open `index.html` in your web browser.
+3. Use the buttons to input mathematical expressions.
+4. Enjoy the calculator's functionality.
 
-- **JavaScript (`script.js`):**
-  - Implements the calculator functionality.
-  - Allows users to perform basic arithmetic operations.
-  - Handles input, clears the screen, and evaluates expressions.
+## Supported Operations
 
-## Cloning the Repository
+- Use `×` for multiplication and `÷` for division.
+- The `=` button evaluates the expression.
+- Backspace (`CE`) removes the last character.
+- `AC` clears the entire input.
 
-To clone this repository, follow these steps:
+## Styling
 
-1. Open your terminal or command prompt.
+The user interface is designed with a clean and modern look, providing a pleasant user experience.
 
-2. Navigate to the directory where you want to clone the repository.
+## How to Contribute
 
-3. Run the following command:
-   ```
-   git clone https://github.com/Sujal092004/calculator.git
-Change into the cloned directory:
+Feel free to contribute by opening issues or submitting pull requests. Bug reports, suggestions, and improvements are always welcome!
 
+## Technologies Used
 
-cd calculator
-Running the Application
-Open the index.html file in a web browser to view the calculator application.
+- HTML
+- CSS
+- JavaScript
 
-Interact with the calculator by clicking on the buttons to input numbers and perform operations.
+## Screenshots
 
-Note: The 404 page will be displayed when the browser window width is below 1400 pixels.
-
-Calculator UI Details
-The calculator UI is designed with a responsive layout.
-It includes rows of buttons for digits (0-9), operators (+, -, *, /), clear (C), and equals (=).
-The calculator supports basic arithmetic operations and displays results on the screen.
-Responsive Design
-The calculator UI is responsive and adjusts to different screen sizes. The 404 page becomes visible when the browser window width is below 1400 pixels.
+Include screenshots of your calculator in action or any important features.
 
 
-*Additional Notes:*
-- The `eval` function in JavaScript is used to evaluate expressions. However, using `eval` with user input may pose security risks. Consider implementing a safer method for evaluating expressions in a production environment.
-- The media queries in the CSS file ensure that the calculator is hidden when the browser window width is below 1400 pixels, and the 404 page is displayed instead.
-- The project uses the following external image for the background of the 404 page: [404 Background Image](https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif).
+
