@@ -23,7 +23,8 @@ A simple calculator web application with basic arithmetic and scientific functio
 - The `=` button evaluates the expression.
 - Backspace (`CE`) removes the last character.
 - `AC` clears the entire input.
-
+## Check out website here
+https://sujal-gupta-sg.github.io/calculator/
 ## Styling
 
 The user interface is designed with a clean and modern look, providing a pleasant user experience.
